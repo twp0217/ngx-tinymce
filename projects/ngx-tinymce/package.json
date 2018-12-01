@@ -1,0 +1,30 @@
+{
+  "name": "@twp0217/ngx-tinymce",
+  "version": "0.0.0",
+  "description": "Angular(v2+) tinymce component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twp0217/ngx-tinymce.git"
+  },
+  "keywords": [
+    "ng",
+    "ng2",
+    "ngx",
+    "angular",
+    "angular2",
+    "tinymce",
+    "ngx-tinymce"
+  ],
+  "author": "tu.wenpan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twp0217/ngx-tinymce/issues"
+  },
+  "homepage": "https://github.com/twp0217/ngx-tinymce#readme",
+  "peerDependencies": {
+    "@angular/core": ">=6.0.0",
+    "@angular/common": ">=6.0.0",
+    "@angular/forms": ">=6.0.0",
+    "tinymce": ">=4.8.0"
+  }
+}
