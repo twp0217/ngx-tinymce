@@ -10,6 +10,15 @@
 npm install tinymce @twp0217/ngx-tinymce --save
 ```
 
+- 在`angular-cli.json`中增加`tinymce`配置
+
+```javascript
+"scripts": [
+  "node_modules/tinymce/tinymce.js",
+  "node_modules/tinymce/themes/modern/theme.js"
+]
+```
+
 - 在module导入`NgxTinymceModule`
 
 ```javascript

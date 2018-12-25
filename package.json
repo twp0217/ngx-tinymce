@@ -1,6 +1,6 @@
 {
   "name": "ngx-tinymce-demo",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "scripts": {
     "ng": "ng",
     "start": "npm run build:lib && ng serve",

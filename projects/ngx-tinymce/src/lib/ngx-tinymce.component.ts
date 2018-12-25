@@ -1,15 +1,12 @@
 import { Component, AfterViewInit, OnDestroy, forwardRef, ViewChild, ElementRef, NgZone, Input, Output, EventEmitter } from "@angular/core";
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 
-// tinymce
-import tinymce from "tinymce/tinymce";
-// theme
-import "tinymce/themes/modern/theme";
-
 import { TinymceOptions } from "./interface";
 import { DefaultOptions } from "./default-options";
 import { isFunction } from "./utils";
 import { TinymceEvents } from "./tinymce-events";
+
+declare var tinymce: any;
 
 @Component({
   selector: "ngx-tinymce",
@@ -109,6 +106,9 @@ export class NgxTinymceComponent extends TinymceEvents implements ControlValueAc
    * 编辑器初始化
    */
   tinymceInit() {
+    if (typeof tinymce === 'undefined') {
+      throw new Error('failed to load tinymce.js');
+    }
     let options: TinymceOptions = {
       target: this.host.nativeElement,
       setup: editor => {
